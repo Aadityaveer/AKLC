@@ -1,0 +1,175 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+ background-image: url("DALL·E 2024-08-24 00.11.57 - A professional and modern law firm office interior background. The scene includes a large, polished wooden desk with neatly arranged legal documents a.png");
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+.container{
+    width: 600px;
+    background-color: transparent;
+    padding: 30px;
+    box-shadow: 0, 2px, 16px white;
+    border-radius: 20px;
+}
+.tab_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    position: relative;
+    
+}
+.tab_box .tab_btn.active{
+    color: #7360ff;
+}
+.tab_box .tab_btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: #919191;
+    background: none;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+.content_box{
+    height: 660px;     
+    padding: 20px;
+    color: white;
+}
+.content_box .content{
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{transform: translateX(50px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+    
+}
+.content_box .content.active{
+    display: block;
+}
+.content_box .content h2{
+    margin-bottom: 10px;
+}
+.line{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 90px;
+    height: 5px;
+    background-color: #7360ff;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+/*Contact Form Start*/
+.form-container{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container form{
+    width: 670px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: 30px;
+    flex-wrap: wrap;
+    color: #919191;
+    
+}
+.form-container input{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: #919191 2px solid;
+    color: #fff;
+}
+.form-container .name_fields{
+    font-size: 18px;
+    width: 500px;
+    height: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.form-container .form-email{
+    font-size: 18px;
+    width:250px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 10px;
+
+}
+.form-container .form-mobile{
+    font-size: 18px;
+    width: 220px;
+}
+.form-container .form-msg{
+        height: 20px;
+        margin-left: 10px;
+        padding: 40px;
+        display:flex;
+        justify-content: center;
+}
+.form-container textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #919191;
+    min-height: 20px;
+    max-height: 20px;
+    color: #fff;
+    outline: none;
+    width: 300px;
+    
+}
+.form-container .form-subject{
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    min-height: 10px;
+    max-height: 20px;
+}
+.form-container button{
+    background: rgb(219, 117, 49);
+    border-radius: 15px;
+    color: #ffffffd9;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    justify-content: space-around;
+    font-weight: 200;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif ;
+    cursor: pointer;
+    
+}
+.form-container .form-submit{
+    margin-top: 40px;
+    margin-right: 30px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+/*Contact Form End*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
